@@ -27,6 +27,39 @@
 		}
 	</script>
 	{{ Configs.theme_header }}
+	<script>
+		// Override CTFd theme-color inline styles with Fallout theme - run immediately
+		(function() {
+			function overrideTheme() {
+				var themeStyle = document.getElementById('theme-color');
+				if (themeStyle) {
+					themeStyle.textContent = ':root {--theme-color: #050505;} .navbar{background-color: #050505 !important;} .jumbotron{background-color: #1a1a1a !important;}';
+				}
+				// Also set CSS variable directly
+				if (document.documentElement) {
+					document.documentElement.style.setProperty('--theme-color', '#050505');
+				}
+			}
+			// Try immediately
+			overrideTheme();
+			// Also try when DOM is ready (in case style tag is added later)
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', overrideTheme);
+			} else {
+				overrideTheme();
+			}
+			// Use MutationObserver to catch style tag if added dynamically
+			if (window.MutationObserver) {
+				var observer = new MutationObserver(function(mutations) {
+					overrideTheme();
+				});
+				observer.observe(document.head || document.documentElement, {
+					childList: true,
+					subtree: true
+				});
+			}
+		})();
+	</script>
 </head>
 <body>
 	<div class="scanline"></div>

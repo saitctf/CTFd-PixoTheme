@@ -11,6 +11,7 @@
   --terminal-bg: #1a1a1a;
   --text-green: #00FF41;
   --text-amber: #FFB000;
+  --theme-color: #050505;
 }
 
 /* Base Body and HTML Styling */
@@ -468,5 +469,23 @@ blockquote {
   border-left: 4px solid var(--pipboy-green) !important;
   color: var(--text-green) !important;
   background-color: rgba(0, 255, 65, 0.05) !important;
+}
+
+/* Override CTFd theme color settings */
+.navbar {
+  background-color: var(--darker-bg) !important;
+}
+
+.bg-dark {
+  background-color: var(--darker-bg) !important;
+}
+
+/* Force override any inline theme-color styles */
+style#theme-color {
+  display: none !important;
+}
+
+[style*="--theme-color"] {
+  --theme-color: var(--darker-bg) !important;
 }
 
