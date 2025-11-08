@@ -2,6 +2,8 @@
   padding-left: 30px;
   padding-right: 30px;
   font-size: 14px;
+  color: $text-green;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
 }
 
 .chal-desc img {
@@ -14,24 +16,52 @@
   max-width: 1000px;
   padding: 1em;
   margin: 0 auto;
+  background-color: $terminal-bg;
+  border: 2px solid $pipboy-green;
+  color: $text-green;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
 }
 
+/* Fallout Theme Variables */
+$pipboy-green: #00FF41;
+$pipboy-amber: #FFB000;
+$vault-tec-blue: #0066CC;
+$nuclear-green: #39FF14;
+$dark-bg: #0a0a0a;
+$terminal-bg: #1a1a1a;
+$text-green: #00FF41;
+
 .btn-info {
-  background-color: #5b7290 !important;
+  background-color: $vault-tec-blue !important;
+  border-color: $vault-tec-blue !important;
+  color: #fff !important;
 }
 
 .badge-info {
-  background-color: #5b7290 !important;
+  background-color: $vault-tec-blue !important;
+  color: #fff !important;
 }
 
 .challenge-button {
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 3px 3px 3px rgba(0, 255, 65, 0.3);
+  background-color: $terminal-bg !important;
+  border: 2px solid $pipboy-green !important;
+  color: $text-green !important;
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  transition: all 0.3s;
+}
+
+.challenge-button:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.6);
+  border-color: $nuclear-green !important;
+  background-color: rgba(0, 255, 65, 0.1) !important;
 }
 
 .solved-challenge {
-  background-color: #37d63e !important;
-  opacity: 0.4;
-  border: none;
+  background-color: rgba(0, 255, 65, 0.2) !important;
+  border: 2px solid $pipboy-green !important;
+  opacity: 1;
+  color: $text-green !important;
 }
 
 .corner-button-check {
@@ -43,4 +73,110 @@
 
 .key-submit .btn {
   height: 51px;
+  background-color: $pipboy-green !important;
+  border-color: $pipboy-green !important;
+  color: $dark-bg !important;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.key-submit .btn:hover {
+  background-color: $nuclear-green !important;
+  border-color: $nuclear-green !important;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.6);
+}
+
+/* Challenge Submit Button */
+.challenge-submit {
+  background: $pipboy-green !important;
+  color: $dark-bg !important;
+  box-shadow: 0 2px 25px rgba(0, 255, 65, 0.5) !important;
+  border: 2px solid $pipboy-green !important;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-weight: 700;
+}
+
+.challenge-submit:hover {
+  background: $nuclear-green !important;
+  border-color: $nuclear-green !important;
+  box-shadow: 0 2px 30px rgba(57, 255, 20, 0.7) !important;
+}
+
+.challenge-submit:active {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+/* Challenge Tags */
+.challenge-tag {
+  background-color: $vault-tec-blue !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-weight: 700;
+}
+
+/* Challenge Name */
+.challenge-name {
+  color: $text-green !important;
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5) !important;
+  font-size: 1rem;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-weight: 700;
+}
+
+/* Challenge Value */
+.challenge-value {
+  color: $text-amber !important;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-weight: 700;
+}
+
+.challenge-value:before {
+  background-image: url(../img/coin.png);
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  content: '';
+  background-size: cover;
+  margin: 0 -5px -5px 0;
+}
+
+/* Category Header */
+.category-header h3 {
+  text-transform: uppercase;
+  color: $text-green;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.category-header h3:before {
+  content: ' ';
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background: url(../img/arrow2.png) no-repeat;
+  background-size: contain;
+}
+
+/* Challenge Charts */
+.challenge-charts-box {
+  padding: 40px 0 40px 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: $terminal-bg;
+  border: 1px solid $pipboy-green;
+}
+
+.challenge-charts {
+  background: $terminal-bg !important;
+}
+
+/* Select Options */
+select option {
+  background-color: $darker-bg;
+  color: $text-green;
+  font-family: 'Share Tech Mono', 'Courier New', 'Monaco', 'Menlo', monospace;
 }
