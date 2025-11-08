@@ -33,11 +33,11 @@
 			function overrideTheme() {
 				var themeStyle = document.getElementById('theme-color');
 				if (themeStyle) {
-					themeStyle.textContent = ':root {--theme-color: #050505;} .navbar{background-color: #050505 !important;} .jumbotron{background-color: #1a1a1a !important;}';
+					themeStyle.textContent = ':root {--theme-color: #212121;} .navbar{background-color: #212121 !important;} .jumbotron{background-color: #1D1E2A !important;}';
 				}
 				// Also set CSS variable directly
 				if (document.documentElement) {
-					document.documentElement.style.setProperty('--theme-color', '#050505');
+					document.documentElement.style.setProperty('--theme-color', '#212121');
 				}
 			}
 			// Try immediately
