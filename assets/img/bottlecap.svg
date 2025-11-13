@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
+  <!-- Outer rim of bottlecap -->
+  <circle cx="14" cy="14" r="13" fill="#FFB000" stroke="#00FF41" stroke-width="1"/>
+  <!-- Inner circle -->
+  <circle cx="14" cy="14" r="10" fill="#FFB000" stroke="#00FF41" stroke-width="0.5"/>
+  <!-- Ridges around the edge (bottlecap texture) -->
+  <circle cx="14" cy="14" r="12" fill="none" stroke="#00FF41" stroke-width="0.3" stroke-dasharray="1,1"/>
+  <!-- Center circle (typical bottlecap design) -->
+  <circle cx="14" cy="14" r="6" fill="#00FF41" opacity="0.3"/>
+  <!-- Small center dot -->
+  <circle cx="14" cy="14" r="2" fill="#00FF41"/>
+</svg>
