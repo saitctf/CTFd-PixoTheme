@@ -1,2 +1,17 @@
-.chal-desc{padding-left:30px;padding-right:30px;font-size:14px}.chal-desc img{max-width:100%;height:auto}.modal-content{border-radius:0px;max-width:1000px;padding:1em;margin:0 auto}.btn-info{background-color:#5b7290 !important}.badge-info{background-color:#5b7290 !important}.challenge-button{box-shadow:3px 3px 3px grey}.solved-challenge{background-color:#37d63e !important;opacity:0.4;border:none}.corner-button-check{margin-top:-10px;margin-right:25px;position:absolute;right:0}.key-submit .btn{height:51px}
+/* Error: Undefined variable.
+ *   ,
+ * 5 |   color: $text-green;
+ *   |          ^^^^^^^^^^^
+ *   '
+ *   assets/css/challenge-board.scss 5:10  root stylesheet */
 
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502    color: $text-green;\a   \2502           ^^^^^^^^^^^\a   \2575 \a   assets/css/challenge-board.scss 5:10  root stylesheet";
+}
